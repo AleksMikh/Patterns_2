@@ -45,12 +45,6 @@ public class DataGenerator {
         return password;
     }
 
-    public static class Registration {
-        private Registration() {
-
-        }
-    }
-
     public static RegistrationDto getUser(String status) {
         RegistrationDto user = new RegistrationDto(getRandomLogin(), getRandomPassword(), status);
         return user;
